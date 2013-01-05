@@ -21,6 +21,13 @@
 		0A0C959316981F5900CB68C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0C957416981F5800CB68C6 /* Foundation.framework */; };
 		0A0C959B16981F5900CB68C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C959916981F5900CB68C6 /* InfoPlist.strings */; };
 		0A0C959E16981F5900CB68C6 /* UIRefreshControl_VCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C959D16981F5900CB68C6 /* UIRefreshControl_VCTests.m */; };
+		0A0C95A916981F9300CB68C6 /* UIRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C95A816981F9300CB68C6 /* UIRefreshView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0A0C95AA16981F9300CB68C6 /* UIRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C95A816981F9300CB68C6 /* UIRefreshView.m */; };
+		0A0C95B0169820D300CB68C6 /* CKRefreshArrowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C95AD169820D300CB68C6 /* CKRefreshArrowView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0A0C95B1169820D300CB68C6 /* CKRefreshArrowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C95AD169820D300CB68C6 /* CKRefreshArrowView.m */; };
+		0A0C95B2169820D300CB68C6 /* CKRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C95AF169820D300CB68C6 /* CKRefreshControl.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0A0C95B3169820D300CB68C6 /* CKRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C95AF169820D300CB68C6 /* CKRefreshControl.m */; };
+		0A0C95BA169825F300CB68C6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0C95B9169825F300CB68C6 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,13 @@
 		0A0C959A16981F5900CB68C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A0C959C16981F5900CB68C6 /* UIRefreshControl_VCTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIRefreshControl_VCTests.h; sourceTree = "<group>"; };
 		0A0C959D16981F5900CB68C6 /* UIRefreshControl_VCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIRefreshControl_VCTests.m; sourceTree = "<group>"; };
+		0A0C95A716981F9300CB68C6 /* UIRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIRefreshView.h; path = ../UIRefreshView.h; sourceTree = "<group>"; };
+		0A0C95A816981F9300CB68C6 /* UIRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIRefreshView.m; path = ../UIRefreshView.m; sourceTree = "<group>"; };
+		0A0C95AC169820D300CB68C6 /* CKRefreshArrowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKRefreshArrowView.h; sourceTree = "<group>"; };
+		0A0C95AD169820D300CB68C6 /* CKRefreshArrowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKRefreshArrowView.m; sourceTree = "<group>"; };
+		0A0C95AE169820D300CB68C6 /* CKRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKRefreshControl.h; sourceTree = "<group>"; };
+		0A0C95AF169820D300CB68C6 /* CKRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKRefreshControl.m; sourceTree = "<group>"; };
+		0A0C95B9169825F300CB68C6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A0C95BA169825F300CB68C6 /* QuartzCore.framework in Frameworks */,
 				0A0C957316981F5800CB68C6 /* UIKit.framework in Frameworks */,
 				0A0C957516981F5800CB68C6 /* Foundation.framework in Frameworks */,
 				0A0C957716981F5800CB68C6 /* CoreGraphics.framework in Frameworks */,
@@ -82,6 +97,7 @@
 		0A0C956316981F5800CB68C6 = {
 			isa = PBXGroup;
 			children = (
+				0A0C95AB169820A600CB68C6 /* CKRefreachControl */,
 				0A0C957816981F5800CB68C6 /* UIRefreshControl_VC */,
 				0A0C959616981F5900CB68C6 /* UIRefreshControl_VCTests */,
 				0A0C957116981F5800CB68C6 /* Frameworks */,
@@ -101,6 +117,7 @@
 		0A0C957116981F5800CB68C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A0C95B9169825F300CB68C6 /* QuartzCore.framework */,
 				0A0C957216981F5800CB68C6 /* UIKit.framework */,
 				0A0C957416981F5800CB68C6 /* Foundation.framework */,
 				0A0C957616981F5800CB68C6 /* CoreGraphics.framework */,
@@ -114,6 +131,8 @@
 			children = (
 				0A0C958116981F5900CB68C6 /* AppDelegate.h */,
 				0A0C958216981F5900CB68C6 /* AppDelegate.m */,
+				0A0C95A716981F9300CB68C6 /* UIRefreshView.h */,
+				0A0C95A816981F9300CB68C6 /* UIRefreshView.m */,
 				0A0C957916981F5800CB68C6 /* Supporting Files */,
 			);
 			path = UIRefreshControl_VC;
@@ -150,6 +169,17 @@
 				0A0C959916981F5900CB68C6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A0C95AB169820A600CB68C6 /* CKRefreachControl */ = {
+			isa = PBXGroup;
+			children = (
+				0A0C95AC169820D300CB68C6 /* CKRefreshArrowView.h */,
+				0A0C95AD169820D300CB68C6 /* CKRefreshArrowView.m */,
+				0A0C95AE169820D300CB68C6 /* CKRefreshControl.h */,
+				0A0C95AF169820D300CB68C6 /* CKRefreshControl.m */,
+			);
+			name = CKRefreachControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +293,9 @@
 			files = (
 				0A0C957F16981F5900CB68C6 /* main.m in Sources */,
 				0A0C958316981F5900CB68C6 /* AppDelegate.m in Sources */,
+				0A0C95A916981F9300CB68C6 /* UIRefreshView.m in Sources */,
+				0A0C95B0169820D300CB68C6 /* CKRefreshArrowView.m in Sources */,
+				0A0C95B2169820D300CB68C6 /* CKRefreshControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +304,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A0C959E16981F5900CB68C6 /* UIRefreshControl_VCTests.m in Sources */,
+				0A0C95AA16981F9300CB68C6 /* UIRefreshView.m in Sources */,
+				0A0C95B1169820D300CB68C6 /* CKRefreshArrowView.m in Sources */,
+				0A0C95B3169820D300CB68C6 /* CKRefreshControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +394,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIRefreshControl_VC/UIRefreshControl_VC-Prefix.pch";
 				INFOPLIST_FILE = "UIRefreshControl_VC/UIRefreshControl_VC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -369,6 +406,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UIRefreshControl_VC/UIRefreshControl_VC-Prefix.pch";
 				INFOPLIST_FILE = "UIRefreshControl_VC/UIRefreshControl_VC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -427,6 +465,7 @@
 				0A0C95A316981F5900CB68C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A0C95A416981F5900CB68C6 /* Build configuration list for PBXNativeTarget "UIRefreshControl_VCTests" */ = {
 			isa = XCConfigurationList;
@@ -435,6 +474,7 @@
 				0A0C95A616981F5900CB68C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

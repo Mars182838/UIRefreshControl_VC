@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UIRefreshView.h"
 
 @implementation AppDelegate
 
@@ -19,7 +20,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
+    UIRefreshView *refresh = [[UIRefreshView alloc] init];
+    self.window.rootViewController = refresh;
+    [refresh release];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
